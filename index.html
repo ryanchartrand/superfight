@@ -1,0 +1,37 @@
+<html>
+<head>
+  <script src="randomizer.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cards">
+    <div class="character" id="CharacterOne"></div>
+    <div class="character" id="CharacterTwo"></div>
+    <div class="character" id="CharacterThree"></div>
+  </div>
+
+  <div style="clear:left"></div>
+
+  <div class="cards">
+    <div class="ability" id="AbilityOne"></div>
+    <div class="ability" id="AbilityTwo"></div>
+    <div class="ability" id="AbilityThree"></div>
+  </div>
+  <script type="text/javascript">
+      var theCard = drawCharacterCard();
+      document.getElementById('CharacterOne').innerHTML = theCard;
+      var theCard = drawCharacterCard();
+      document.getElementById('CharacterTwo').innerHTML = theCard;
+      var theCard = drawCharacterCard();
+      document.getElementById('CharacterThree').innerHTML = theCard;
+      var theCard = drawAbilityCard();
+      document.getElementById('AbilityOne').innerHTML = theCard;
+      var theCard = drawAbilityCard();
+      document.getElementById('AbilityTwo').innerHTML = theCard;
+      var theCard = drawAbilityCard();
+      document.getElementById('AbilityThree').innerHTML = theCard;
+  </script>
+</body>
+</html>
